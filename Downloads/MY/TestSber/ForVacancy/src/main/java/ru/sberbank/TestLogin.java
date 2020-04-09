@@ -35,28 +35,27 @@ public class TestLogin extends JUnitHTMLReporter{
 
     @Test
     public void logintestfalce(){
-        webDriver.get("https://boka.hertzfleetservices.se");
-        driver.findElement(By.cssSelector("a[href*='#/vehicles/2']")).click();
+       webDriver.get("https://www.sberbank.ru/en/individualclients/dist_services/inner_sbol");
+      
+       loginform.clickonline();
 
-//        loginform.clickonline();
-//
-//        loginform.setlogin(generateString());
-//
-//        System.out.print(generateString()+"\n");
-//
-//        loginform.setpass(generateString());
-//
-//        System.out.print(generateString());
-//
-//        loginform.clicksubmit();
-//
-//        loginform.accessdenied();
-//
-//        try {
-//            getscreen();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+       loginform.setlogin(generateString());
+
+       System.out.print(generateString()+"\n");
+
+       loginform.setpass(generateString());
+
+       System.out.print(generateString());
+
+       loginform.clicksubmit();
+
+       loginform.accessdenied();
+
+       try {
+           getscreen();
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
 
     }
 
